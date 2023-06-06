@@ -6,6 +6,7 @@ import { Routes, Route } from "react-router-dom";
 import Dashboard from "./screens/Dashobard";
 import Account from "./screens/Account";
 import Cart from "./screens/Cart";
+import NotFound from "./screens/NotFound";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Route path="/dashboard" element={<Dashboard />} />
       <Route path="/account" element={<Account />} />
       <Route path="/carts" element={<Cart />} />
+      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 }
