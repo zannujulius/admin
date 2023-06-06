@@ -14,21 +14,21 @@ const Dashboard = () => {
   return (
     <Layout>
       <div className="mt-6 mb-[100px]">
-        <div className="flex items-center justify-between">
-          <div className="">
-            <div className="font-bold text-black">Hi Zannu</div>
-            <div className="font-light text-black text-[15px] ">
+        <div className="flex flex-col lg:flex-row md:flex-row items-center justify-between">
+          <div className="w-full">
+            <div className="font-bold sm:text-left text-black w-full">
+              Hi Zannu
+            </div>
+            <div className="font-light sm:text-left text-black text-[15px] ">
               Report for today's sales
             </div>
           </div>
-          <div className="">
-            <div className="ml-4">
-              <RangePicker style={{ width: 300, height: 43 }} />
-            </div>
+          <div className="ml-4 mt-4 w-full">
+            <RangePicker style={{ width: "100%", height: 43, margin: 0 }} />
           </div>
         </div>
-        <div className="h-[auto] grid grid-cols-2 rounded-md bg-white mt-4">
-          <div className="grid grid-cols-2 grid-rows-2">
+        <div className="h-[auto] grid grid-cols-1 md:grid-cols-2 rounded-md bg-white mt-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-2 sm:grid-rows-1">
             <div className="p-8 border-r-[1px] border-b-[1px] border-[#eee]">
               <div className="w-[45px] flex items-center justify-center h-[45px] bg-[#f3f3f3] rounded-full">
                 <AiOutlineUsergroupAdd size={21} />
@@ -131,7 +131,7 @@ const Dashboard = () => {
               />
             </div>
           </div>
-          <div className="mt-6">
+          <div className="mt-6 hidden md:flex">
             <SalesTable />
           </div>
         </div>

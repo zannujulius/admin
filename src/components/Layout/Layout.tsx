@@ -12,7 +12,7 @@ const Layout = ({ children }: Props) => {
         <SideBar />
         <div className="w-full h-screen relative top-0 left-0 overflow-y-scroll">
           <NavBar />
-          <div className="px-6">{children}</div>
+          <div className="px-4 md:px-6">{children}</div>
         </div>
       </div>
     </>
